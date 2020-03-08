@@ -1,0 +1,6 @@
+* CSS now has native variables that doesn't require a preprocessor like SASS
+
+* Best practice is to move away from icon fonts to SVG
+    -icomoon.io
+    - Use the sprite-file (symbol-defs.svg)
+    - This combines the SVGs into one HTTP request
