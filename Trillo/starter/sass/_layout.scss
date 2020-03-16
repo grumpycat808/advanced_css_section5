@@ -22,12 +22,19 @@
   display: flex;
 }
 
-.sidebar {
+nav.sidebar {
   background-color: var(--color-grey-dark-1);
   flex: 0 0 18%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .hotel-view {
   background-color: #fff;
   flex: 1; //Element should take up as much space as possible
+
+  height: 80rem;
+
+
 }
