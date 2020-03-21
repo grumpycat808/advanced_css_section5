@@ -185,9 +185,14 @@
 
 .overview {
   display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--color-grey-light-2);
 
   &__heading {
-
+    font-size: 2.25rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    padding: 1.5rem 3rem;
   }
 
   &__stars {
@@ -218,4 +223,43 @@
 
   }
 
+}
+
+.btn-inline {
+  border: none;
+  color: var(--color-primary);
+  font-size: inherit;
+  padding-bottom: 2px;
+  background-color: transparent;
+  cursor: pointer;
+  transition: .2s;
+
+  &:hover {
+    color: var(--color-grey-dark-1)
+  }
+
+  &:focus {
+    outline: none;
+
+    // This will make the animation loop infinitely while the button state is :focus
+    animation: pulsate 1s infinite;
+  }
+}
+
+//Defining an animation
+@keyframes pulsate {
+  0% {
+    transform: scale(1);
+    box-shadow: none;
+  }
+
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 1rem 4rem rgba(0, 0, 0, .25);
+  }
+
+  100% {
+    transform: scale(1);
+    box-shadow: none;
+  }
 }
