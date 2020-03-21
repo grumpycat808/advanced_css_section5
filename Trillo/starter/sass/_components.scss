@@ -174,6 +174,10 @@
 
 .gallery {
   display: flex;
+  
+  &__item {
+    display: flex;
+  }
   &__photo {
     //We always want flexible images
     //defined img widths using percentages
@@ -208,19 +212,35 @@
   }
 
   &__location {
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+  }
 
+  &__icon-location {
+    margin-right: 0.5rem;
   }
 
   &__rating {
-
+    background-color: var(--color-primary);
+    margin-left: 3rem;
+    color: #fff;
+    align-self: stretch;
+    padding: 0 2.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 
   &__rating-average {
-
+    font-size: 2.25rem;
+    font-weight: 300;
   }
 
   &__rating-count {
-
+    font-size: 0.8rem;
+    text-transform: uppercase;
   }
 
 }
@@ -235,14 +255,18 @@
   transition: .2s;
 
   &:hover {
-    color: var(--color-grey-dark-1)
-  }
-
-  &:focus {
+    color: var(--color-grey-dark-1);
     outline: none;
 
     // This will make the animation loop infinitely while the button state is :focus
     animation: pulsate 1s infinite;
+  }
+
+  &:focus {
+    //outline: none;
+    //
+    //// This will make the animation loop infinitely while the button state is :focus
+    //animation: pulsate 1s infinite;
   }
 }
 

@@ -33,8 +33,29 @@ nav.sidebar {
 .hotel-view {
   background-color: #fff;
   flex: 1; //Element should take up as much space as possible
+}
 
-  height: 80rem;
+.detail {
+  display: flex;
+  padding: 4.5rem;
+  background-color: var(--color-grey-light-1);
 
+  border-bottom: var(--line);
+}
 
+.description {
+  background-color: white;
+  flex: 0 0 60%;
+  //Definind width
+  // when using a percentage, set the other two values to 0
+  box-shadow: var(--shadow-light);
+  margin-right: 4.5rem;
+  padding: 3rem;
+
+  font-size: 1.4rem;
+}
+
+.user-reviews {
+  background-color: yellowgreen;
+  flex: 1;
 }
