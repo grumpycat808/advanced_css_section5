@@ -39,7 +39,7 @@ nav.sidebar {
   display: flex;
   padding: 4.5rem;
   background-color: var(--color-grey-light-1);
-
+  font-size: 1.4rem;
   border-bottom: var(--line);
 }
 
@@ -56,6 +56,5 @@ nav.sidebar {
 }
 
 .user-reviews {
-  background-color: yellowgreen;
   flex: 1;
 }
