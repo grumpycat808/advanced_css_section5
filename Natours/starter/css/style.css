@@ -114,3 +114,9 @@ body {
         transform: translateX(0);
     }
 }
+
+/*Link pseudo-class*/
+.btn:link, .btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+}
