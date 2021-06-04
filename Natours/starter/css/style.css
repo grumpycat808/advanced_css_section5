@@ -12,111 +12,25 @@ Dark green: #28b485
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; 
+    /* Include padding and border in overall height and width */
 }
 
 body {
-    /* This font will be inherited by all child elements */
+    /* Always specify font-family in body */
     font-family: "Lato", sans-serif;
     font-weight: 400;
     font-size: 16px;
+    color: #777777;
     line-height: 1.7;
-    color: #777;
     padding: 30px;
 }
 
 .header {
     height: 95vh;
-
-    /*To create a gradient on top of an image, we need 2 background images*/
-    background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)),  url('../img/hero.jpg');
+    background-image:linear-gradient(to right bottom, rgba(126, 213, 111, 0.803), rgba(40, 180, 133, 0.803)), url('../img/hero.jpg');
     background-size: cover;
     background-position: top;
-
-    /* Dimensions of the visible areas of our clip*/
-    /*Coordinates are clockwise*/
-    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-
-    position: relative;
-}
-
-.logo-box {
-    position: absolute;
-    top: 40px;
-    left: 40px;
-}
-
-.logo {
-    height: 35px;
-}
-
-.text-box {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-.heading-primary {
-    color: #fff;
-    text-transform: uppercase;
-}
-
-.heading-primary-main {
-
-    /* Display both elements as block so they stack on top of each other */
-    display: block;
-    font-size: 60px;
-    font-weight: 400;
-    letter-spacing: 35px;
-    animation: moveInLeft 1s ease-out;
-}
-
-.heading-primary-sub {
-    display: block;
-    font-weight: 700;
-    letter-spacing: 17.4px;
-    font-size: 20px;
-    animation: moveInRight 1s ease-out;
-}
-
-@keyframes moveInLeft {
-    0% {
-        opacity: 0;
-
-        /* X axis is left to right, Y is up to bottom*/
-        transform: translateX(-100px);
-    }
-
-    80% {
-        transform: translateX(10px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-@keyframes moveInRight {
-    0% {
-        opacity: 0;
-
-        /* X axis is left to right, Y is up to bottom*/
-        transform: translateX(100px);
-    }
-
-    80% {
-        transform: translateX(-10px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-/*Link pseudo-class*/
-.btn:link, .btn:visited {
-    text-transform: uppercase;
-    text-decoration: none;
+    clip-path: polygon(0 0, 100% 0%, 100% 75vh, 0 100%);
+    /* Check out clippy */
 }
