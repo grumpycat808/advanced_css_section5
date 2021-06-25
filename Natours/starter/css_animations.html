@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .container {
+                display: flex;
+                position: relative;
+            }
+            .parent {
+                background-color: blue;
+                height: 400px;
+                width: 400px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .child {
+                background-color: red;
+                height: 200px;
+                width: 200px;
+                transition: transform 3s; /* This tells CSS we only want to animation one single property */
+            /* If we won't specify which property it defaults to all */
+            /* Fourth property is the delay */
+                z-index: 2;
+                position: absolute;
+            }
+
+            /* Targets child element when you hover parent */
+            .parent:hover .child {
+                animation: left-to-right 1s ease-in-out;
+                /* Forwards specifies to NOT go back to default state once animation is complete
+                    So, stay at 100%
+                */
+            }
+            
+            textarea {
+                width: 200px;
+                height: 200px;
+                transition: height 2s;
+            }
+
+            textarea:focus {
+                height: 100px;
+                width: 100px;
+            }
+            @keyframes left-to-right {
+                100% {
+                    transform: scale(2);
+                }
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <h1>My First Heading</h1>
+        <p>My first paragraph.</p>
+        <div class="container">
+            <div class="parent"><div class="child"></div></div>
+            
+        </div>
+
+        <textarea></textarea>
+    </body>
+</html>
