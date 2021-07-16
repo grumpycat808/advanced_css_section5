@@ -1,0 +1,20 @@
+Three pillars of Good HTML/CSS
+* Responsive images
+* Correct units
+* Desktop first vs mobile first
+
+Maintainable and Scalable Code
+Web Performance
+* Fewer images, compress images
+* Fewer HTTP requests
+* Compress Code
+* CSS preprocessor
+* 
+
+Specificity
+* Styles can come from the CSS author, browser default, user agent
+* Importance > Specificity > Source Order
+* Inline styles > ID > classes > elements
+* (inline, id, classes, elements)
+* Rely on specificity rather than Order
+* Author stylesheet should come last after 3rd party stylesheets
