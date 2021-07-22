@@ -1,0 +1,2 @@
+Mobile First vs Desktop First and Breakpoints
+*   optimizing for mobile vs desktop

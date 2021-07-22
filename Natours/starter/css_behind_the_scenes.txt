@@ -15,6 +15,10 @@ Specificity
 * Styles can come from the CSS author, browser default, user agent
 * Importance > Specificity > Source Order
 * Inline styles > ID > classes > elements
-* (inline, id, classes, elements)
+* (inline, id, classes/pseudo classes, elements/pseudo elements)
 * Rely on specificity rather than Order
 * Author stylesheet should come last after 3rd party stylesheets
+
+CSS Architecture
+* Component-driven design. Divide interfaces into modular building blocks
+* 

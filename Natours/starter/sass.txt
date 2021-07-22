@@ -1,0 +1,9 @@
+SASS
+* CSS preprocessor
+* Partials and imports
+* When using mixins the code can be written once and included everywhere
+* When using extends, the selectors are copied 
+
+Using NPM to compile SASS
+* run <npm init>
+* run <npm install node-sass>
