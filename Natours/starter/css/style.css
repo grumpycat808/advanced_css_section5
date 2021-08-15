@@ -10,7 +10,7 @@ body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-size: 16px;
-  color: #777777;
+  color: #777;
   line-height: 1.7;
   padding: 30px; }
 
@@ -99,7 +99,7 @@ body {
 
 .btn--white {
   background-color: #fff;
-  color: #777777;
+  color: #777;
   padding: 15px 40px; }
 
 .btn::after {

@@ -20,5 +20,11 @@ Specificity
 * Author stylesheet should come last after 3rd party stylesheets
 
 CSS Architecture
-* Component-driven design. Divide interfaces into modular building blocks
-* 
+* Component-driven design. Divide interfaces into modular building blocks 
+* Re-usable across a project and possibly across many projects
+* Components shouldn't depend on their parent elements
+
+BEM Pattern
+.block {} example: class="card"
+.block__element {} example: class="card__button"
+.block__element block__element--modifier {} example: class="card__button card_button--active"
