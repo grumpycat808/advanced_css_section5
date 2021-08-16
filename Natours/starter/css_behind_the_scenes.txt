@@ -28,3 +28,6 @@ BEM Pattern
 .block {} example: class="card"
 .block__element {} example: class="card__button"
 .block__element block__element--modifier {} example: class="card__button card_button--active"
+
+CSS Architecture
+
