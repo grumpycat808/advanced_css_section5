@@ -75,6 +75,9 @@ html {
     -ms-transform: skew(0deg, 5deg);
     transform: skew(0deg, 5deg); }
 
+.u-center-text {
+  text-align: center; }
+
 .btn {
   text-transform: uppercase;
   text-decoration: none;
@@ -148,8 +151,7 @@ html {
   width: 114rem;
   background-color: #72eecd;
   margin: 0 auto;
-  margin-bottom: 0;
-  margin-right: 0; }
+  margin-bottom: 0; }
   .row:not(:last-of-type) {
     margin-bottom: 8rem; }
   .row::after {
