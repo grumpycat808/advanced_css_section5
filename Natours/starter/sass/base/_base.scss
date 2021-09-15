@@ -17,5 +17,10 @@ body {
 }
 
 html {
-    font-size: 62.5%;
+    font-size: 62.5%; //Default font size in browsers is 16 px
+    // 16px x .625 = 10px
+}
+
+a {
+    text-decoration: none;
 }

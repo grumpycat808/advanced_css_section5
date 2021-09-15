@@ -47,3 +47,30 @@
     }
 }
 
+.learn-more {
+
+    &:link,
+    &:visited {
+        color: $color-primary;
+        display: inline-block;
+        text-decoration: none;
+        border-bottom: 1px solid $color-primary;
+
+    
+    }
+    padding: .2rem 1rem;
+    display: inline-block;
+    transition: all .2s;
+    &:hover {
+        background-color: $color-primary;
+        box-shadow: 0px 5px 20px rgba($color-black, .2);
+        color: $color-white;
+        transform: translateY(-2px);
+    }
+
+    &:active {
+        box-shadow: 0px 5px 10px rgba($color-black, .2);
+        transform: translateY(2px);
+        color: $color-white;
+    }
+}

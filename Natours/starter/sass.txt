@@ -7,3 +7,5 @@ SASS
 Using NPM to compile SASS
 * run <npm init>
 * run <npm install node-sass>
+
+* Set anchor elements to display:inline-block so that we can add margin and padding
