@@ -1,0 +1,19 @@
+* Text color gradients
+background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+-webkit-background-clip: text; //Clip gradient by text
+color: transparent;
+
+* Remember to put the transition on the DEFAULT state of the element
+For example: 
+.feature-box {
+    //Default non-hover state
+    transition: all .2s ease;
+    
+    &:hover {
+        transform: translateY(-1.5rem) scaleY(1.03);
+    }
+}
+
+.something > * {
+    //selects ALL direct children of .something
+}
